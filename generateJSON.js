@@ -7,12 +7,12 @@ const outputFile = "./data.json"
 
 const BaseUrl = "https://github.com/adrian26o/Wallpapers";
 
-const folderUrl = "";
+const folderUrl = "assets";
 
 assetsFolder = assetsFolder.map(v => ({
     "name": v.split(".").slice(0,v.split(".").length - 1).join("."),
     "ext": path.extname(v),
-    "url": `${BaseUrl}/${folderUrl}/${v}`
+    "url": `${BaseUrl}/blob/main/${folderUrl}/${v}?raw=true`
 })
 )
 
